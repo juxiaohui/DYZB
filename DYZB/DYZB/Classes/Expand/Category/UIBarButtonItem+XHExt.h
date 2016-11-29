@@ -12,5 +12,4 @@
 
 + (instancetype)itemWithImage:(NSString *)image highImage:(NSString *)highImage size:(CGSize)size target:(id)target action:(SEL)action;
 
-
 @end

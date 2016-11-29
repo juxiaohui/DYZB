@@ -42,12 +42,13 @@
 #define XHRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
 #define XHGlobalColor  [UIColor colorWithRed:0.94f green:0.94f blue:0.94f alpha:1.00f];
+#define XHRandomColor XHRGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
 #define XHWeakSelf __weak typeof(self) weakSelf = self;
 
 #define XHUserDefaults [NSUserDefaults standardUserDefaults]
 
-#define XHLogFunc JXHLog(@"%s", __FUNCTION__);
+#define XHLogFunc XHLog(@"%s", __FUNCTION__);
 
 
 #endif /* XHMacros_h */

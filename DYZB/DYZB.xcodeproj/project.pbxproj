@@ -20,6 +20,10 @@
 		B358E8BA1DE6D5D100CC6413 /* XHFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8B91DE6D5D100CC6413 /* XHFollowViewController.m */; };
 		B358E8BD1DE6D5E400CC6413 /* XHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8BC1DE6D5E400CC6413 /* XHProfileViewController.m */; };
 		B3BA07791DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BA07781DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.m */; };
+		B3BA077C1DE800AD00EEEDF4 /* XHPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BA077B1DE800AD00EEEDF4 /* XHPageTitleView.m */; };
+		B3BA077F1DE802DF00EEEDF4 /* XHConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BA077E1DE802DF00EEEDF4 /* XHConst.m */; };
+		B3BA07821DE8182100EEEDF4 /* UIView+XHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BA07811DE8182100EEEDF4 /* UIView+XHExt.m */; };
+		B3BA07851DE828F700EEEDF4 /* XHPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BA07841DE828F700EEEDF4 /* XHPageContentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,14 @@
 		B358E8BC1DE6D5E400CC6413 /* XHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHProfileViewController.m; sourceTree = "<group>"; };
 		B3BA07771DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XHExt.h"; sourceTree = "<group>"; };
 		B3BA07781DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XHExt.m"; sourceTree = "<group>"; };
+		B3BA077A1DE800AD00EEEDF4 /* XHPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPageTitleView.h; sourceTree = "<group>"; };
+		B3BA077B1DE800AD00EEEDF4 /* XHPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPageTitleView.m; sourceTree = "<group>"; };
+		B3BA077D1DE802DF00EEEDF4 /* XHConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHConst.h; sourceTree = "<group>"; };
+		B3BA077E1DE802DF00EEEDF4 /* XHConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHConst.m; sourceTree = "<group>"; };
+		B3BA07801DE8182100EEEDF4 /* UIView+XHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XHExt.h"; sourceTree = "<group>"; };
+		B3BA07811DE8182100EEEDF4 /* UIView+XHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XHExt.m"; sourceTree = "<group>"; };
+		B3BA07831DE828F700EEEDF4 /* XHPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPageContentView.h; sourceTree = "<group>"; };
+		B3BA07841DE828F700EEEDF4 /* XHPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPageContentView.m; sourceTree = "<group>"; };
 		EDA9E2F06D5A396CD1CEA4D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -201,6 +213,8 @@
 			children = (
 				B3BA07771DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.h */,
 				B3BA07781DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.m */,
+				B3BA07801DE8182100EEEDF4 /* UIView+XHExt.h */,
+				B3BA07811DE8182100EEEDF4 /* UIView+XHExt.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -208,6 +222,8 @@
 		B358E88A1DE6C80600CC6413 /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				B3BA077D1DE802DF00EEEDF4 /* XHConst.h */,
+				B3BA077E1DE802DF00EEEDF4 /* XHConst.m */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -454,6 +470,10 @@
 			isa = PBXGroup;
 			children = (
 				B358E8A91DE6CC3400CC6413 /* XHSingleton.h */,
+				B3BA077A1DE800AD00EEEDF4 /* XHPageTitleView.h */,
+				B3BA077B1DE800AD00EEEDF4 /* XHPageTitleView.m */,
+				B3BA07831DE828F700EEEDF4 /* XHPageContentView.h */,
+				B3BA07841DE828F700EEEDF4 /* XHPageContentView.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -654,10 +674,14 @@
 			files = (
 				B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */,
 				B358E8BA1DE6D5D100CC6413 /* XHFollowViewController.m in Sources */,
+				B3BA077F1DE802DF00EEEDF4 /* XHConst.m in Sources */,
 				B358E8561DE6C24500CC6413 /* main.m in Sources */,
+				B3BA07851DE828F700EEEDF4 /* XHPageContentView.m in Sources */,
 				B358E8B71DE6D5A800CC6413 /* XHLiveViewController.m in Sources */,
 				B358E8BD1DE6D5E400CC6413 /* XHProfileViewController.m in Sources */,
+				B3BA07821DE8182100EEEDF4 /* UIView+XHExt.m in Sources */,
 				B358E8AE1DE6D2E700CC6413 /* XHTabBarController.m in Sources */,
+				B3BA077C1DE800AD00EEEDF4 /* XHPageTitleView.m in Sources */,
 				B358E8B41DE6D58500CC6413 /* XHHomeViewController.m in Sources */,
 				B3BA07791DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.m in Sources */,
 				B358E8B11DE6D53F00CC6413 /* XHNavigationController.m in Sources */,

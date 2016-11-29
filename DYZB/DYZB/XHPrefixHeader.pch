@@ -35,7 +35,8 @@
 
 //#import "CBNetworking.h"
 
-//#import "JXHConst.h"
+#import "XHConst.h"
 
-//#import "UIView+JXHFrame.h"
+#import "UIView+XHExt.h"
+
 #endif /* XHPrefixHeader_pch */
