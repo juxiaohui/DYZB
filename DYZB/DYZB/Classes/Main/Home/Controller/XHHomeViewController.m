@@ -10,6 +10,7 @@
 #import "UIBarButtonItem+XHExt.h"
 #import "XHPageTitleView.h"
 #import "XHPageContentView.h"
+#import "XHRecommendViewController.h"
 
 @interface XHHomeViewController ()<XHPageTitleViewDelegate,XHPageContentViewDelegate>
 
@@ -24,11 +25,13 @@
 
 -(XHPageContentView *)contentView{
     if (!_contentView) {
-        CGFloat contentH = ScreenHeight - NavigationBarH - titleViewH;
+        CGFloat contentH = ScreenHeight - NavigationBarH - titleViewH - TabBarH;
 
         CGRect rect = CGRectMake(0, NavigationBarH + titleViewH, ScreenWidth, contentH);
+        XHRecommendViewController * recommendVc = [[XHRecommendViewController alloc]init];
         NSMutableArray * VCs = [NSMutableArray array];
-        for (int i= 0; i<4; i++) {
+        [VCs addObject:recommendVc];
+        for (int i= 0; i<3; i++) {
             
             UIViewController * vc = [[UIViewController alloc]init];
             vc.view.backgroundColor = XHRandomColor;
