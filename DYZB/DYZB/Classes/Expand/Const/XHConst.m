@@ -10,6 +10,10 @@ CGFloat   const NavigationBarH = 64 ;
 CGFloat   const TabBarH = 49;
 CGFloat   const titleViewH = 40;
 
+NSString * const error = @"error";
+
+NSString * const data = @"data";
+
 NSString *const adImageName = @"adImageName";
 
 NSString *const adImageLink = @"adImageLink";

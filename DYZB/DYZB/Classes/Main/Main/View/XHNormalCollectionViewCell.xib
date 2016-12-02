@@ -73,7 +73,13 @@
                 <constraint firstItem="uAc-Pi-duw" firstAttribute="leading" secondItem="MA3-tX-g5w" secondAttribute="trailing" constant="5" id="zfA-PE-x9x"/>
             </constraints>
             <size key="customSize" width="256" height="169"/>
-            <point key="canvasLocation" x="-59" y="-5"/>
+            <connections>
+                <outlet property="iconImageView" destination="BAY-Nw-X4G" id="heQ-na-db7"/>
+                <outlet property="nickNameLabel" destination="7iI-Zb-A3C" id="135-vO-LNW"/>
+                <outlet property="onelineLabel" destination="uAc-Pi-duw" id="kr1-kW-j2b"/>
+                <outlet property="roomNameLabel" destination="LA0-am-2cG" id="qXq-Iy-cQP"/>
+            </connections>
+            <point key="canvasLocation" x="-148" y="-6"/>
         </collectionViewCell>
     </objects>
     <resources>

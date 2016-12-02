@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class XHAnchorGroupModel;
 
 @interface XHSectionHeaderView : UICollectionReusableView
+@property(nonatomic, strong)XHAnchorGroupModel * anchorGroup;
 
 @end

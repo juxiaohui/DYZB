@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class XHAnchorRoomModel;
 @interface XHNormalCollectionViewCell : UICollectionViewCell
+@property(nonatomic, strong)XHAnchorRoomModel * anchorRoom;
 
 @end

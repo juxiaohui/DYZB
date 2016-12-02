@@ -95,7 +95,13 @@
                 <constraint firstAttribute="trailing" secondItem="Pk6-ft-ppy" secondAttribute="trailing" id="tIK-Ue-1Dc"/>
             </constraints>
             <size key="customSize" width="248" height="270"/>
-            <point key="canvasLocation" x="-135" y="-18"/>
+            <connections>
+                <outlet property="cityLabel" destination="XPs-fp-9ed" id="hjN-65-2cb"/>
+                <outlet property="iconImageView" destination="7Et-e2-BlP" id="UjS-K5-MPW"/>
+                <outlet property="nickNameLabel" destination="u8M-PZ-cnV" id="Bdx-Qa-N6W"/>
+                <outlet property="onelineLabel" destination="Pyu-Rk-2tL" id="59q-dC-ze0"/>
+            </connections>
+            <point key="canvasLocation" x="-249" y="-154"/>
         </collectionViewCell>
     </objects>
     <resources>
