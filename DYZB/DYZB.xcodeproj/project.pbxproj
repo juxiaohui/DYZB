@@ -10,6 +10,11 @@
 		25EEF42D47BF98408F565CFF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA9E2F06D5A396CD1CEA4D1 /* libPods.a */; };
 		B30B31081DF513DE00AE1D16 /* XHBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B31061DF513DE00AE1D16 /* XHBaseCollectionViewCell.m */; };
 		B30B31091DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B31071DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib */; };
+		B30B310C1DF532A100AE1D16 /* XHRecommendCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B310B1DF532A100AE1D16 /* XHRecommendCycleView.m */; };
+		B30B310E1DF532B400AE1D16 /* XHRecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B310D1DF532B400AE1D16 /* XHRecommendCycleView.xib */; };
+		B30B31111DF546C000AE1D16 /* XHCycleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B31101DF546C000AE1D16 /* XHCycleModel.m */; };
+		B30B31151DF54DA400AE1D16 /* XHCycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B31131DF54DA400AE1D16 /* XHCycleCollectionViewCell.m */; };
+		B30B31161DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B31141DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib */; };
 		B31A52461DEFC31200ACD572 /* XHRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */; };
 		B358E8561DE6C24500CC6413 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8551DE6C24500CC6413 /* main.m */; };
 		B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8581DE6C24500CC6413 /* AppDelegate.m */; };
@@ -64,6 +69,14 @@
 		B30B31051DF513DE00AE1D16 /* XHBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBaseCollectionViewCell.h; sourceTree = "<group>"; };
 		B30B31061DF513DE00AE1D16 /* XHBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBaseCollectionViewCell.m; sourceTree = "<group>"; };
 		B30B31071DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHBaseCollectionViewCell.xib; sourceTree = "<group>"; };
+		B30B310A1DF532A100AE1D16 /* XHRecommendCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendCycleView.h; sourceTree = "<group>"; };
+		B30B310B1DF532A100AE1D16 /* XHRecommendCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendCycleView.m; sourceTree = "<group>"; };
+		B30B310D1DF532B400AE1D16 /* XHRecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHRecommendCycleView.xib; sourceTree = "<group>"; };
+		B30B310F1DF546C000AE1D16 /* XHCycleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCycleModel.h; sourceTree = "<group>"; };
+		B30B31101DF546C000AE1D16 /* XHCycleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCycleModel.m; sourceTree = "<group>"; };
+		B30B31121DF54DA400AE1D16 /* XHCycleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCycleCollectionViewCell.h; sourceTree = "<group>"; };
+		B30B31131DF54DA400AE1D16 /* XHCycleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCycleCollectionViewCell.m; sourceTree = "<group>"; };
+		B30B31141DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHCycleCollectionViewCell.xib; sourceTree = "<group>"; };
 		B31A52441DEFC31200ACD572 /* XHRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendViewController.h; sourceTree = "<group>"; };
 		B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendViewController.m; sourceTree = "<group>"; };
 		B358E8511DE6C24500CC6413 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +369,8 @@
 		B358E8941DE6C80600CC6413 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B30B310F1DF546C000AE1D16 /* XHCycleModel.h */,
+				B30B31101DF546C000AE1D16 /* XHCycleModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -366,6 +381,12 @@
 				B38EC5BB1DEFF03C00CED081 /* XHSectionHeaderView.h */,
 				B38EC5BC1DEFF03C00CED081 /* XHSectionHeaderView.m */,
 				B38EC5BD1DEFF03C00CED081 /* XHSectionHeaderView.xib */,
+				B30B310A1DF532A100AE1D16 /* XHRecommendCycleView.h */,
+				B30B310B1DF532A100AE1D16 /* XHRecommendCycleView.m */,
+				B30B310D1DF532B400AE1D16 /* XHRecommendCycleView.xib */,
+				B30B31121DF54DA400AE1D16 /* XHCycleCollectionViewCell.h */,
+				B30B31131DF54DA400AE1D16 /* XHCycleCollectionViewCell.m */,
+				B30B31141DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -680,11 +701,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30B310E1DF532B400AE1D16 /* XHRecommendCycleView.xib in Resources */,
 				B30B31091DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib in Resources */,
 				B38EC5C41DEFF3E700CED081 /* XHNormalCollectionViewCell.xib in Resources */,
 				B358E8611DE6C24500CC6413 /* Assets.xcassets in Resources */,
 				B38EC5C91DF008DE00CED081 /* XHPrettyCollectionViewCell.xib in Resources */,
 				B38EC5BF1DEFF03C00CED081 /* XHSectionHeaderView.xib in Resources */,
+				B30B31161DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +780,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30B31111DF546C000AE1D16 /* XHCycleModel.m in Sources */,
+				B30B31151DF54DA400AE1D16 /* XHCycleCollectionViewCell.m in Sources */,
 				B3CA70421DF1479500EFFE37 /* CBNetworking.m in Sources */,
 				B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */,
 				B358E8BA1DE6D5D100CC6413 /* XHFollowViewController.m in Sources */,
@@ -780,6 +805,7 @@
 				B358E8B41DE6D58500CC6413 /* XHHomeViewController.m in Sources */,
 				B3BA07791DE7DF8000EEEDF4 /* UIBarButtonItem+XHExt.m in Sources */,
 				B3CA70521DF1513A00EFFE37 /* NSDictionary+JXHLog.m in Sources */,
+				B30B310C1DF532A100AE1D16 /* XHRecommendCycleView.m in Sources */,
 				B358E8B11DE6D53F00CC6413 /* XHNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

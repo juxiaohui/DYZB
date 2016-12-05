@@ -10,6 +10,7 @@
 #import "NSDate+XHExt.h"
 #import "XHAnchorGroupModel.h"
 #import "XHAnchorRoomModel.h"
+#import "XHCycleModel.h"
 
 @interface XHRecommendViewModel ()
 
@@ -27,6 +28,27 @@
     }
     return _anchorGroups;
 }
+
+-(NSMutableArray<XHCycleModel *> *)cycleDatas{
+    if (!_cycleDatas) {
+        _cycleDatas = [NSMutableArray array];
+    }
+    return _cycleDatas;
+}
+
+-(void)requestCycleDataWith:(requestResultBlock)resultBlock{
+    NSMutableDictionary * params = [NSMutableDictionary dictionary];
+    params[@"version"] = @2.410;
+    [CBNetworking requestWithUrl:@"http://www.douyutv.com/api/v1/slide/6" params:params useCache:NO httpMedthod:CBGETRequest progressBlock:nil successBlock:^(id response) {
+        if ([response[error] integerValue] == 0) {
+            self.cycleDatas = [XHCycleModel mj_objectArrayWithKeyValuesArray:response[data]];
+            resultBlock ? resultBlock(YES) : nil;
+        }
+    } failBlock:^(NSError *error) {
+        
+    }];
+}
+
 
 -(void)requestDataWith:(requestResultBlock)resultBlock{
     
@@ -89,7 +111,7 @@
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         [self.anchorGroups insertObject:self.hotGroup atIndex:0];
         [self.anchorGroups insertObject:self.prettyGroup atIndex:1];
-        resultBlock?resultBlock(YES):nil;
+        resultBlock ? resultBlock(YES) : nil;
     });
 }
 

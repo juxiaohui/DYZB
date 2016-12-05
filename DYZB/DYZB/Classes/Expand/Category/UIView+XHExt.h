@@ -25,4 +25,7 @@
 @property (nonatomic, assign) CGFloat xh_right;
 
 @property (nonatomic, assign) CGFloat xh_bottom;
+
++ (instancetype)viewFromXib;
+
 @end

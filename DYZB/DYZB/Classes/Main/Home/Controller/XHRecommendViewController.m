@@ -13,22 +13,32 @@
 #import "XHRecommendViewModel.h"
 #import "XHAnchorGroupModel.h"
 #import "XHBaseCollectionViewCell.h"
+#import "XHRecommendCycleView.h"
 
 static CGFloat const itemMargin = 10;
-
 static NSString * const normalCellID = @"normalCellID";
 static NSString * const prettyCellID = @"prettyCellID";
 static NSString * const sectionHeaderID = @"sectionHeaderID";
-static CGFloat const sectionHeaderH = 50;
+static CGFloat    const sectionHeaderH = 50;
+#define cycleViewH ScreenWidth * 3 / 8
 
 @interface XHRecommendViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic, weak)UICollectionView * collectionView;
-
 @property(nonatomic, strong)XHRecommendViewModel * viewModel;
+@property(nonatomic, strong)XHRecommendCycleView * cycleView;
 
 @end
 
 @implementation XHRecommendViewController
+
+-(XHRecommendCycleView *)cycleView{
+    if (!_cycleView) {
+        XHRecommendCycleView * cycleView = [XHRecommendCycleView viewFromXib];
+        cycleView.frame = CGRectMake(0, -(cycleViewH), ScreenWidth, cycleViewH);
+        _cycleView = cycleView;
+    }
+    return _cycleView;
+}
 
 -(XHRecommendViewModel *)viewModel{
     
@@ -48,6 +58,7 @@ static CGFloat const sectionHeaderH = 50;
         layout.headerReferenceSize = CGSizeMake(ScreenWidth, sectionHeaderH);
         layout.sectionInset = UIEdgeInsetsMake(0, itemMargin, 0, itemMargin);
         UICollectionView * collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
+        collectionView.contentInset = UIEdgeInsetsMake(cycleViewH, 0, 0, 0);
         collectionView.delegate = self;
         collectionView.dataSource = self;
         collectionView.backgroundColor = [UIColor whiteColor];
@@ -55,6 +66,7 @@ static CGFloat const sectionHeaderH = 50;
         [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([XHNormalCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:normalCellID];
          [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([XHPrettyCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:prettyCellID];
         [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([XHSectionHeaderView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:sectionHeaderID];
+        [collectionView addSubview:self.cycleView];
         [self.view addSubview:collectionView];
         _collectionView = collectionView;
     }
@@ -69,6 +81,12 @@ static CGFloat const sectionHeaderH = 50;
     [self.viewModel requestDataWith:^(BOOL success) {
         if (success) {
             [self.collectionView reloadData];
+        }
+    }];
+    
+    [self.viewModel requestCycleDataWith:^(BOOL success) {
+        if (success) {
+            self.cycleView.cycleDatas = self.viewModel.cycleDatas;
         }
     }];
 }
