@@ -6,9 +6,7 @@
 //  Copyright © 2016年 juxiaohui. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-@class XHAnchorRoomModel;
-@interface XHNormalCollectionViewCell : UICollectionViewCell
-@property(nonatomic, strong)XHAnchorRoomModel * anchorRoom;
+#import "XHBaseCollectionViewCell.h"
 
+@interface XHNormalCollectionViewCell : XHBaseCollectionViewCell
 @end

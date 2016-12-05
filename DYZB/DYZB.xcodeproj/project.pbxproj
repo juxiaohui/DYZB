@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		25EEF42D47BF98408F565CFF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA9E2F06D5A396CD1CEA4D1 /* libPods.a */; };
+		B30B31081DF513DE00AE1D16 /* XHBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B31061DF513DE00AE1D16 /* XHBaseCollectionViewCell.m */; };
+		B30B31091DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B31071DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib */; };
 		B31A52461DEFC31200ACD572 /* XHRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */; };
 		B358E8561DE6C24500CC6413 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8551DE6C24500CC6413 /* main.m */; };
 		B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8581DE6C24500CC6413 /* AppDelegate.m */; };
@@ -59,6 +61,9 @@
 /* Begin PBXFileReference section */
 		2D60EBDF90327665DC508D9B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		36AFC2C3989A099AFF9D33A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B30B31051DF513DE00AE1D16 /* XHBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		B30B31061DF513DE00AE1D16 /* XHBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		B30B31071DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHBaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		B31A52441DEFC31200ACD572 /* XHRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendViewController.h; sourceTree = "<group>"; };
 		B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendViewController.m; sourceTree = "<group>"; };
 		B358E8511DE6C24500CC6413 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -439,6 +444,9 @@
 				B38EC5C51DF008DE00CED081 /* XHPrettyCollectionViewCell.h */,
 				B38EC5C61DF008DE00CED081 /* XHPrettyCollectionViewCell.m */,
 				B38EC5C71DF008DE00CED081 /* XHPrettyCollectionViewCell.xib */,
+				B30B31051DF513DE00AE1D16 /* XHBaseCollectionViewCell.h */,
+				B30B31061DF513DE00AE1D16 /* XHBaseCollectionViewCell.m */,
+				B30B31071DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -672,6 +680,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30B31091DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib in Resources */,
 				B38EC5C41DEFF3E700CED081 /* XHNormalCollectionViewCell.xib in Resources */,
 				B358E8611DE6C24500CC6413 /* Assets.xcassets in Resources */,
 				B38EC5C91DF008DE00CED081 /* XHPrettyCollectionViewCell.xib in Resources */,
@@ -755,6 +764,7 @@
 				B3CA70551DF1547700EFFE37 /* XHAnchorGroupModel.m in Sources */,
 				B3CA70501DF14E5100EFFE37 /* NSDate+XHExt.m in Sources */,
 				B358E8561DE6C24500CC6413 /* main.m in Sources */,
+				B30B31081DF513DE00AE1D16 /* XHBaseCollectionViewCell.m in Sources */,
 				B3BA07851DE828F700EEEDF4 /* XHPageContentView.m in Sources */,
 				B358E8B71DE6D5A800CC6413 /* XHLiveViewController.m in Sources */,
 				B358E8BD1DE6D5E400CC6413 /* XHProfileViewController.m in Sources */,

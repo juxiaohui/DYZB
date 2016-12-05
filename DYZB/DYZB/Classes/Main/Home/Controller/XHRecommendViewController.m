@@ -12,6 +12,7 @@
 #import "XHPrettyCollectionViewCell.h"
 #import "XHRecommendViewModel.h"
 #import "XHAnchorGroupModel.h"
+#import "XHBaseCollectionViewCell.h"
 
 static CGFloat const itemMargin = 10;
 
@@ -88,13 +89,13 @@ static CGFloat const sectionHeaderH = 50;
     XHAnchorGroupModel * group = [self.viewModel.anchorGroups objectAtIndex:indexPath.section];
     XHAnchorRoomModel * anchorRoom = [group.room_list objectAtIndex:indexPath.row];
     
-    if (indexPath.section == 1) {
-        XHPrettyCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:prettyCellID forIndexPath:indexPath];
-        cell.anchorRoom = anchorRoom;
-        return  cell;
-    }
+    XHBaseCollectionViewCell * cell = nil;
     
-    XHNormalCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:normalCellID forIndexPath:indexPath];
+    if (indexPath.section == 1) {
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:prettyCellID forIndexPath:indexPath];
+    }else{
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:normalCellID forIndexPath:indexPath];
+    }
     cell.anchorRoom = anchorRoom;
     return cell;
 }
