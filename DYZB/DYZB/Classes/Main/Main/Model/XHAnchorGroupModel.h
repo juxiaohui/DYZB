@@ -15,7 +15,7 @@
 
 @property(nonatomic, assign)BOOL  push_vertical_screen;
 /// 图标
-//@property(nonatomic, copy)NSString * icon_url;
+@property(nonatomic, copy)NSString * icon_url;
 /// 组标题
 @property(nonatomic, copy)NSString * tag_name;
 

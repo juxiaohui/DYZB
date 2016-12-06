@@ -14,6 +14,7 @@
 #import "XHAnchorGroupModel.h"
 #import "XHBaseCollectionViewCell.h"
 #import "XHRecommendCycleView.h"
+#import "XHRecommendGameView.h"
 
 static CGFloat const itemMargin = 10;
 static NSString * const normalCellID = @"normalCellID";
@@ -25,16 +26,25 @@ static CGFloat    const sectionHeaderH = 50;
 @interface XHRecommendViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic, weak)UICollectionView * collectionView;
 @property(nonatomic, strong)XHRecommendViewModel * viewModel;
-@property(nonatomic, strong)XHRecommendCycleView * cycleView;
+@property(nonatomic, weak)XHRecommendCycleView * cycleView;
+@property(nonatomic, weak)XHRecommendGameView * gameView;
 
 @end
 
 @implementation XHRecommendViewController
 
+-(XHRecommendGameView *)gameView{
+    if (!_gameView) {
+        XHRecommendGameView * gameView = [XHRecommendGameView viewFromXib];
+        [self.collectionView addSubview:gameView];
+        _gameView = gameView;
+    }
+    return _gameView;
+}
 -(XHRecommendCycleView *)cycleView{
     if (!_cycleView) {
         XHRecommendCycleView * cycleView = [XHRecommendCycleView viewFromXib];
-        cycleView.frame = CGRectMake(0, -(cycleViewH), ScreenWidth, cycleViewH);
+        [self.collectionView addSubview:cycleView];
         _cycleView = cycleView;
     }
     return _cycleView;
@@ -58,7 +68,7 @@ static CGFloat    const sectionHeaderH = 50;
         layout.headerReferenceSize = CGSizeMake(ScreenWidth, sectionHeaderH);
         layout.sectionInset = UIEdgeInsetsMake(0, itemMargin, 0, itemMargin);
         UICollectionView * collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
-        collectionView.contentInset = UIEdgeInsetsMake(cycleViewH, 0, 0, 0);
+        collectionView.contentInset = UIEdgeInsetsMake(cycleViewH + gameViewH, 0, 0, 0);
         collectionView.delegate = self;
         collectionView.dataSource = self;
         collectionView.backgroundColor = [UIColor whiteColor];
@@ -66,7 +76,6 @@ static CGFloat    const sectionHeaderH = 50;
         [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([XHNormalCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:normalCellID];
          [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([XHPrettyCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:prettyCellID];
         [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([XHSectionHeaderView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:sectionHeaderID];
-        [collectionView addSubview:self.cycleView];
         [self.view addSubview:collectionView];
         _collectionView = collectionView;
     }
@@ -74,12 +83,21 @@ static CGFloat    const sectionHeaderH = 50;
 }
 
 
+-(void)viewWillLayoutSubviews{
+    
+    [super viewWillLayoutSubviews];
+    
+    self.cycleView.frame = CGRectMake(0, -((cycleViewH) + gameViewH), ScreenWidth, cycleViewH);
+    self.gameView.frame = CGRectMake(0, -gameViewH, ScreenWidth, gameViewH);
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.viewModel requestDataWith:^(BOOL success) {
         if (success) {
+            self.gameView.gameGoups = [NSMutableArray arrayWithArray:self.viewModel.anchorGroups];
             [self.collectionView reloadData];
         }
     }];

@@ -15,6 +15,10 @@
 		B30B31111DF546C000AE1D16 /* XHCycleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B31101DF546C000AE1D16 /* XHCycleModel.m */; };
 		B30B31151DF54DA400AE1D16 /* XHCycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B31131DF54DA400AE1D16 /* XHCycleCollectionViewCell.m */; };
 		B30B31161DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B31141DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib */; };
+		B30B31191DF566AF00AE1D16 /* XHRecommendGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B31181DF566AF00AE1D16 /* XHRecommendGameView.m */; };
+		B30B311B1DF566BC00AE1D16 /* XHRecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B311A1DF566BC00AE1D16 /* XHRecommendGameView.xib */; };
+		B30B311F1DF56E6100AE1D16 /* XHRecommendGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B311D1DF56E6100AE1D16 /* XHRecommendGameCell.m */; };
+		B30B31201DF56E6100AE1D16 /* XHRecommendGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */; };
 		B31A52461DEFC31200ACD572 /* XHRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */; };
 		B358E8561DE6C24500CC6413 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8551DE6C24500CC6413 /* main.m */; };
 		B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8581DE6C24500CC6413 /* AppDelegate.m */; };
@@ -77,6 +81,12 @@
 		B30B31121DF54DA400AE1D16 /* XHCycleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCycleCollectionViewCell.h; sourceTree = "<group>"; };
 		B30B31131DF54DA400AE1D16 /* XHCycleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCycleCollectionViewCell.m; sourceTree = "<group>"; };
 		B30B31141DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHCycleCollectionViewCell.xib; sourceTree = "<group>"; };
+		B30B31171DF566AF00AE1D16 /* XHRecommendGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendGameView.h; sourceTree = "<group>"; };
+		B30B31181DF566AF00AE1D16 /* XHRecommendGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendGameView.m; sourceTree = "<group>"; };
+		B30B311A1DF566BC00AE1D16 /* XHRecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHRecommendGameView.xib; sourceTree = "<group>"; };
+		B30B311C1DF56E6100AE1D16 /* XHRecommendGameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendGameCell.h; sourceTree = "<group>"; };
+		B30B311D1DF56E6100AE1D16 /* XHRecommendGameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendGameCell.m; sourceTree = "<group>"; };
+		B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHRecommendGameCell.xib; sourceTree = "<group>"; };
 		B31A52441DEFC31200ACD572 /* XHRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendViewController.h; sourceTree = "<group>"; };
 		B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendViewController.m; sourceTree = "<group>"; };
 		B358E8511DE6C24500CC6413 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -387,6 +397,12 @@
 				B30B31121DF54DA400AE1D16 /* XHCycleCollectionViewCell.h */,
 				B30B31131DF54DA400AE1D16 /* XHCycleCollectionViewCell.m */,
 				B30B31141DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib */,
+				B30B31171DF566AF00AE1D16 /* XHRecommendGameView.h */,
+				B30B31181DF566AF00AE1D16 /* XHRecommendGameView.m */,
+				B30B311A1DF566BC00AE1D16 /* XHRecommendGameView.xib */,
+				B30B311C1DF56E6100AE1D16 /* XHRecommendGameCell.h */,
+				B30B311D1DF56E6100AE1D16 /* XHRecommendGameCell.m */,
+				B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -703,11 +719,13 @@
 			files = (
 				B30B310E1DF532B400AE1D16 /* XHRecommendCycleView.xib in Resources */,
 				B30B31091DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib in Resources */,
+				B30B31201DF56E6100AE1D16 /* XHRecommendGameCell.xib in Resources */,
 				B38EC5C41DEFF3E700CED081 /* XHNormalCollectionViewCell.xib in Resources */,
 				B358E8611DE6C24500CC6413 /* Assets.xcassets in Resources */,
 				B38EC5C91DF008DE00CED081 /* XHPrettyCollectionViewCell.xib in Resources */,
 				B38EC5BF1DEFF03C00CED081 /* XHSectionHeaderView.xib in Resources */,
 				B30B31161DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib in Resources */,
+				B30B311B1DF566BC00AE1D16 /* XHRecommendGameView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +817,8 @@
 				B3BA07821DE8182100EEEDF4 /* UIView+XHExt.m in Sources */,
 				B3CA70581DF164A400EFFE37 /* XHAnchorRoomModel.m in Sources */,
 				B38EC5BE1DEFF03C00CED081 /* XHSectionHeaderView.m in Sources */,
+				B30B31191DF566AF00AE1D16 /* XHRecommendGameView.m in Sources */,
+				B30B311F1DF56E6100AE1D16 /* XHRecommendGameCell.m in Sources */,
 				B358E8AE1DE6D2E700CC6413 /* XHTabBarController.m in Sources */,
 				B31A52461DEFC31200ACD572 /* XHRecommendViewController.m in Sources */,
 				B3BA077C1DE800AD00EEEDF4 /* XHPageTitleView.m in Sources */,

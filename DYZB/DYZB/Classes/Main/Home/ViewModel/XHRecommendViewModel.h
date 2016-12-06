@@ -14,7 +14,9 @@ typedef void(^requestResultBlock)(BOOL success);
 @interface XHRecommendViewModel : NSObject
 
 @property(nonatomic, strong)NSMutableArray <XHAnchorGroupModel *>* anchorGroups;
+
 @property(nonatomic, strong)NSMutableArray <XHCycleModel *>* cycleDatas;
+
 
 -(void)requestDataWith:(requestResultBlock)resultBlock;
 -(void)requestCycleDataWith:(requestResultBlock)resultBlock;

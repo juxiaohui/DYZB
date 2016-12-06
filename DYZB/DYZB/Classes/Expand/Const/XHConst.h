@@ -17,6 +17,10 @@ UIKIT_EXTERN NSString * const error;
 
 UIKIT_EXTERN NSString * const data;
 
+UIKIT_EXTERN CGFloat const gameViewH;
+
+UIKIT_EXTERN CGFloat const gameViewW;
+
 UIKIT_EXTERN NSString * const adImageName;
 
 UIKIT_EXTERN NSString * const adImageLink;

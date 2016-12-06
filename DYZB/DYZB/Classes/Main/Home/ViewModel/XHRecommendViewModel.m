@@ -21,7 +21,6 @@
 
 @implementation XHRecommendViewModel
 
-
 -(NSMutableArray<XHAnchorGroupModel *> *)anchorGroups{
     if (!_anchorGroups) {
         _anchorGroups = [NSMutableArray array];

@@ -14,6 +14,9 @@ NSString * const error = @"error";
 
 NSString * const data = @"data";
 
+CGFloat    const gameViewH = 90;
+CGFloat    const gameViewW = 80;
+
 NSString *const adImageName = @"adImageName";
 
 NSString *const adImageLink = @"adImageLink";
