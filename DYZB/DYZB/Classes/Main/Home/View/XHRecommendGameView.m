@@ -21,14 +21,6 @@ static CGFloat const gameViewInsetLR = 10;
 
 @implementation XHRecommendGameView
 
-//-(instancetype)initWithCoder:(NSCoder *)aDecoder{
-//    
-//    if (self = [super initWithCoder:aDecoder]) {
-//        self.gameGoups = [NSMutableArray array];
-//    }
-//    return self;
-//}
-
 -(void)awakeFromNib{
     [super awakeFromNib];
     self.collectionView.contentInset = UIEdgeInsetsMake(0, gameViewInsetLR, 0, gameViewInsetLR);
@@ -65,7 +57,6 @@ static CGFloat const gameViewInsetLR = 10;
     cell.roomModel = self.gameGoups[indexPath.item];
     return cell;
 }
-
 
 #pragma mark - UICollectionViewDelegate
 

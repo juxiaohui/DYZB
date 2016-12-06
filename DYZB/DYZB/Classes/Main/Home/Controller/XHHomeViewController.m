@@ -11,6 +11,7 @@
 #import "XHPageTitleView.h"
 #import "XHPageContentView.h"
 #import "XHRecommendViewController.h"
+#import "XHOtherCategoryTagController.h"
 
 @interface XHHomeViewController ()<XHPageTitleViewDelegate,XHPageContentViewDelegate>
 
@@ -31,10 +32,12 @@
         XHRecommendViewController * recommendVc = [[XHRecommendViewController alloc]init];
         NSMutableArray * VCs = [NSMutableArray array];
         [VCs addObject:recommendVc];
-        for (int i= 0; i<3; i++) {
-            
-            UIViewController * vc = [[UIViewController alloc]init];
-            vc.view.backgroundColor = XHRandomColor;
+        
+        NSArray * titles = @[@"手游",@"娱乐",@"游戏",@"趣玩"];
+        
+        for (int i= 0; i<titles.count; i++) {
+            XHOtherCategoryTagController * vc = [[XHOtherCategoryTagController alloc]init];
+            vc.tagName = titles[i];
             [VCs addObject:vc];
         }
         XHPageContentView * contentView = [[XHPageContentView alloc]initWithFrame:rect childViewControllers:VCs parentViewController:self];
@@ -45,7 +48,7 @@
 }
 -(XHPageTitleView *)titleView{
     if (!_titleView) {
-        XHPageTitleView * titleView = [[XHPageTitleView alloc]initWithFrame:CGRectMake(0, NavigationBarH, ScreenWidth, titleViewH) titles:@[@"推荐",@"游戏",@"娱乐",@"趣玩"]];
+        XHPageTitleView * titleView = [[XHPageTitleView alloc]initWithFrame:CGRectMake(0, NavigationBarH, ScreenWidth, titleViewH) titles:@[@"推荐",@"手游",@"娱乐",@"游戏",@"趣玩"]];
         titleView.delegate = self;
         _titleView = titleView;
     }

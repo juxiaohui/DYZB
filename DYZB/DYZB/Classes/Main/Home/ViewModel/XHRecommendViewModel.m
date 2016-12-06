@@ -11,6 +11,7 @@
 #import "XHAnchorGroupModel.h"
 #import "XHAnchorRoomModel.h"
 #import "XHCycleModel.h"
+#import "NSString+XHExt.h"
 
 @interface XHRecommendViewModel ()
 
@@ -113,5 +114,22 @@
         resultBlock ? resultBlock(YES) : nil;
     });
 }
+
+-(void)requestOtherTagDataWith:(NSString *)title handle:(requestResultBlock)resultBlock{
+
+    NSMutableDictionary * params = [NSMutableDictionary dictionary];
+    params[@"identification"] = title.xh_md5String;
+    params[@"client_sys"] = @"ios";
+    
+    [CBNetworking requestWithUrl:@"http://capi.douyucdn.cn/api/homeCate/getHotRoom" params:params useCache:NO httpMedthod:CBGETRequest progressBlock:nil successBlock:^(id response) {
+        if ([response[error] integerValue] == 0) {
+            self.anchorGroups = [XHAnchorGroupModel mj_objectArrayWithKeyValuesArray:response[data]];
+             resultBlock ? resultBlock(YES) : nil;
+        }
+    } failBlock:^(NSError *error) {
+        
+    }];
+}
+
 
 @end

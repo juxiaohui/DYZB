@@ -20,6 +20,8 @@
 		B30B311F1DF56E6100AE1D16 /* XHRecommendGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B311D1DF56E6100AE1D16 /* XHRecommendGameCell.m */; };
 		B30B31201DF56E6100AE1D16 /* XHRecommendGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */; };
 		B31A52461DEFC31200ACD572 /* XHRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */; };
+		B3458A481DF6952000483D08 /* XHOtherCategoryTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3458A471DF6952000483D08 /* XHOtherCategoryTagController.m */; };
+		B3458A4B1DF6983300483D08 /* NSString+XHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3458A4A1DF6983300483D08 /* NSString+XHExt.m */; };
 		B358E8561DE6C24500CC6413 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8551DE6C24500CC6413 /* main.m */; };
 		B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8581DE6C24500CC6413 /* AppDelegate.m */; };
 		B358E8611DE6C24500CC6413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B358E8601DE6C24500CC6413 /* Assets.xcassets */; };
@@ -89,6 +91,10 @@
 		B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHRecommendGameCell.xib; sourceTree = "<group>"; };
 		B31A52441DEFC31200ACD572 /* XHRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendViewController.h; sourceTree = "<group>"; };
 		B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendViewController.m; sourceTree = "<group>"; };
+		B3458A461DF6952000483D08 /* XHOtherCategoryTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHOtherCategoryTagController.h; sourceTree = "<group>"; };
+		B3458A471DF6952000483D08 /* XHOtherCategoryTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHOtherCategoryTagController.m; sourceTree = "<group>"; };
+		B3458A491DF6983300483D08 /* NSString+XHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XHExt.h"; sourceTree = "<group>"; };
+		B3458A4A1DF6983300483D08 /* NSString+XHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XHExt.m"; sourceTree = "<group>"; };
 		B358E8511DE6C24500CC6413 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B358E8551DE6C24500CC6413 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B358E8571DE6C24500CC6413 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -281,6 +287,8 @@
 				B3CA704E1DF14E5100EFFE37 /* NSDate+XHExt.h */,
 				B3CA704F1DF14E5100EFFE37 /* NSDate+XHExt.m */,
 				B3CA70511DF1513A00EFFE37 /* NSDictionary+JXHLog.m */,
+				B3458A491DF6983300483D08 /* NSString+XHExt.h */,
+				B3458A4A1DF6983300483D08 /* NSString+XHExt.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -372,6 +380,8 @@
 				B358E8B31DE6D58500CC6413 /* XHHomeViewController.m */,
 				B31A52441DEFC31200ACD572 /* XHRecommendViewController.h */,
 				B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */,
+				B3458A461DF6952000483D08 /* XHOtherCategoryTagController.h */,
+				B3458A471DF6952000483D08 /* XHOtherCategoryTagController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -802,6 +812,7 @@
 				B30B31151DF54DA400AE1D16 /* XHCycleCollectionViewCell.m in Sources */,
 				B3CA70421DF1479500EFFE37 /* CBNetworking.m in Sources */,
 				B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */,
+				B3458A4B1DF6983300483D08 /* NSString+XHExt.m in Sources */,
 				B358E8BA1DE6D5D100CC6413 /* XHFollowViewController.m in Sources */,
 				B3BA077F1DE802DF00EEEDF4 /* XHConst.m in Sources */,
 				B3CA70551DF1547700EFFE37 /* XHAnchorGroupModel.m in Sources */,
@@ -817,6 +828,7 @@
 				B3BA07821DE8182100EEEDF4 /* UIView+XHExt.m in Sources */,
 				B3CA70581DF164A400EFFE37 /* XHAnchorRoomModel.m in Sources */,
 				B38EC5BE1DEFF03C00CED081 /* XHSectionHeaderView.m in Sources */,
+				B3458A481DF6952000483D08 /* XHOtherCategoryTagController.m in Sources */,
 				B30B31191DF566AF00AE1D16 /* XHRecommendGameView.m in Sources */,
 				B30B311F1DF56E6100AE1D16 /* XHRecommendGameCell.m in Sources */,
 				B358E8AE1DE6D2E700CC6413 /* XHTabBarController.m in Sources */,

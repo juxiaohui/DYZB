@@ -18,8 +18,12 @@ typedef void(^requestResultBlock)(BOOL success);
 @property(nonatomic, strong)NSMutableArray <XHCycleModel *>* cycleDatas;
 
 
+
 -(void)requestDataWith:(requestResultBlock)resultBlock;
+
 -(void)requestCycleDataWith:(requestResultBlock)resultBlock;
+
+-(void)requestOtherTagDataWith:(NSString *)title handle:(requestResultBlock)resultBlock;
 
 
 @end
