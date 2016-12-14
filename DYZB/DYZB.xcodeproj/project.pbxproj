@@ -19,6 +19,8 @@
 		B30B311B1DF566BC00AE1D16 /* XHRecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B311A1DF566BC00AE1D16 /* XHRecommendGameView.xib */; };
 		B30B311F1DF56E6100AE1D16 /* XHRecommendGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30B311D1DF56E6100AE1D16 /* XHRecommendGameCell.m */; };
 		B30B31201DF56E6100AE1D16 /* XHRecommendGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */; };
+		B30EF4B61E012FE600CB4BA3 /* XHBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EF4B51E012FE600CB4BA3 /* XHBaseViewModel.m */; };
+		B30EF4B91E0130CA00CB4BA3 /* XHBaseAnchorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EF4B81E0130CA00CB4BA3 /* XHBaseAnchorViewController.m */; };
 		B31A52461DEFC31200ACD572 /* XHRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */; };
 		B3458A481DF6952000483D08 /* XHOtherCategoryTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3458A471DF6952000483D08 /* XHOtherCategoryTagController.m */; };
 		B3458A4B1DF6983300483D08 /* NSString+XHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3458A4A1DF6983300483D08 /* NSString+XHExt.m */; };
@@ -33,6 +35,8 @@
 		B358E8B71DE6D5A800CC6413 /* XHLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8B61DE6D5A800CC6413 /* XHLiveViewController.m */; };
 		B358E8BA1DE6D5D100CC6413 /* XHFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8B91DE6D5D100CC6413 /* XHFollowViewController.m */; };
 		B358E8BD1DE6D5E400CC6413 /* XHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8BC1DE6D5E400CC6413 /* XHProfileViewController.m */; };
+		B373BE411DFE87C000D3C5F5 /* XHOtherCategoryHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B373BE401DFE87C000D3C5F5 /* XHOtherCategoryHeadView.m */; };
+		B373BE431DFE87CC00D3C5F5 /* XHOtherCategoryHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B373BE421DFE87CC00D3C5F5 /* XHOtherCategoryHeadView.xib */; };
 		B38EC5BE1DEFF03C00CED081 /* XHSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B38EC5BC1DEFF03C00CED081 /* XHSectionHeaderView.m */; };
 		B38EC5BF1DEFF03C00CED081 /* XHSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38EC5BD1DEFF03C00CED081 /* XHSectionHeaderView.xib */; };
 		B38EC5C31DEFF3E700CED081 /* XHNormalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B38EC5C11DEFF3E700CED081 /* XHNormalCollectionViewCell.m */; };
@@ -89,6 +93,10 @@
 		B30B311C1DF56E6100AE1D16 /* XHRecommendGameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendGameCell.h; sourceTree = "<group>"; };
 		B30B311D1DF56E6100AE1D16 /* XHRecommendGameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendGameCell.m; sourceTree = "<group>"; };
 		B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHRecommendGameCell.xib; sourceTree = "<group>"; };
+		B30EF4B41E012FE600CB4BA3 /* XHBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBaseViewModel.h; sourceTree = "<group>"; };
+		B30EF4B51E012FE600CB4BA3 /* XHBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBaseViewModel.m; sourceTree = "<group>"; };
+		B30EF4B71E0130CA00CB4BA3 /* XHBaseAnchorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBaseAnchorViewController.h; sourceTree = "<group>"; };
+		B30EF4B81E0130CA00CB4BA3 /* XHBaseAnchorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBaseAnchorViewController.m; sourceTree = "<group>"; };
 		B31A52441DEFC31200ACD572 /* XHRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendViewController.h; sourceTree = "<group>"; };
 		B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendViewController.m; sourceTree = "<group>"; };
 		B3458A461DF6952000483D08 /* XHOtherCategoryTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHOtherCategoryTagController.h; sourceTree = "<group>"; };
@@ -122,6 +130,9 @@
 		B358E8B91DE6D5D100CC6413 /* XHFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFollowViewController.m; sourceTree = "<group>"; };
 		B358E8BB1DE6D5E400CC6413 /* XHProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHProfileViewController.h; sourceTree = "<group>"; };
 		B358E8BC1DE6D5E400CC6413 /* XHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHProfileViewController.m; sourceTree = "<group>"; };
+		B373BE3F1DFE87C000D3C5F5 /* XHOtherCategoryHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHOtherCategoryHeadView.h; sourceTree = "<group>"; };
+		B373BE401DFE87C000D3C5F5 /* XHOtherCategoryHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHOtherCategoryHeadView.m; sourceTree = "<group>"; };
+		B373BE421DFE87CC00D3C5F5 /* XHOtherCategoryHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHOtherCategoryHeadView.xib; sourceTree = "<group>"; };
 		B38EC5BB1DEFF03C00CED081 /* XHSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSectionHeaderView.h; sourceTree = "<group>"; };
 		B38EC5BC1DEFF03C00CED081 /* XHSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSectionHeaderView.m; sourceTree = "<group>"; };
 		B38EC5BD1DEFF03C00CED081 /* XHSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHSectionHeaderView.xib; sourceTree = "<group>"; };
@@ -188,6 +199,15 @@
 				36AFC2C3989A099AFF9D33A0 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B30EF4B31E012FC200CB4BA3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B30EF4B41E012FE600CB4BA3 /* XHBaseViewModel.h */,
+				B30EF4B51E012FE600CB4BA3 /* XHBaseViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B358E8481DE6C24500CC6413 = {
@@ -413,6 +433,9 @@
 				B30B311C1DF56E6100AE1D16 /* XHRecommendGameCell.h */,
 				B30B311D1DF56E6100AE1D16 /* XHRecommendGameCell.m */,
 				B30B311E1DF56E6100AE1D16 /* XHRecommendGameCell.xib */,
+				B373BE3F1DFE87C000D3C5F5 /* XHOtherCategoryHeadView.h */,
+				B373BE401DFE87C000D3C5F5 /* XHOtherCategoryHeadView.m */,
+				B373BE421DFE87CC00D3C5F5 /* XHOtherCategoryHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,6 +476,7 @@
 		B358E89A1DE6C80600CC6413 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B30EF4B31E012FC200CB4BA3 /* ViewModel */,
 				B358E89B1DE6C80600CC6413 /* Controller */,
 				B358E89C1DE6C80600CC6413 /* Model */,
 				B358E89D1DE6C80600CC6413 /* View */,
@@ -467,6 +491,8 @@
 				B358E8AD1DE6D2E700CC6413 /* XHTabBarController.m */,
 				B358E8AF1DE6D53F00CC6413 /* XHNavigationController.h */,
 				B358E8B01DE6D53F00CC6413 /* XHNavigationController.m */,
+				B30EF4B71E0130CA00CB4BA3 /* XHBaseAnchorViewController.h */,
+				B30EF4B81E0130CA00CB4BA3 /* XHBaseAnchorViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -734,6 +760,7 @@
 				B358E8611DE6C24500CC6413 /* Assets.xcassets in Resources */,
 				B38EC5C91DF008DE00CED081 /* XHPrettyCollectionViewCell.xib in Resources */,
 				B38EC5BF1DEFF03C00CED081 /* XHSectionHeaderView.xib in Resources */,
+				B373BE431DFE87CC00D3C5F5 /* XHOtherCategoryHeadView.xib in Resources */,
 				B30B31161DF54DA400AE1D16 /* XHCycleCollectionViewCell.xib in Resources */,
 				B30B311B1DF566BC00AE1D16 /* XHRecommendGameView.xib in Resources */,
 			);
@@ -809,6 +836,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30B31111DF546C000AE1D16 /* XHCycleModel.m in Sources */,
+				B373BE411DFE87C000D3C5F5 /* XHOtherCategoryHeadView.m in Sources */,
 				B30B31151DF54DA400AE1D16 /* XHCycleCollectionViewCell.m in Sources */,
 				B3CA70421DF1479500EFFE37 /* CBNetworking.m in Sources */,
 				B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */,
@@ -819,12 +847,14 @@
 				B3CA70501DF14E5100EFFE37 /* NSDate+XHExt.m in Sources */,
 				B358E8561DE6C24500CC6413 /* main.m in Sources */,
 				B30B31081DF513DE00AE1D16 /* XHBaseCollectionViewCell.m in Sources */,
+				B30EF4B91E0130CA00CB4BA3 /* XHBaseAnchorViewController.m in Sources */,
 				B3BA07851DE828F700EEEDF4 /* XHPageContentView.m in Sources */,
 				B358E8B71DE6D5A800CC6413 /* XHLiveViewController.m in Sources */,
 				B358E8BD1DE6D5E400CC6413 /* XHProfileViewController.m in Sources */,
 				B38EC5C81DF008DE00CED081 /* XHPrettyCollectionViewCell.m in Sources */,
 				B3CA704D1DF149F000EFFE37 /* XHRecommendViewModel.m in Sources */,
 				B38EC5C31DEFF3E700CED081 /* XHNormalCollectionViewCell.m in Sources */,
+				B30EF4B61E012FE600CB4BA3 /* XHBaseViewModel.m in Sources */,
 				B3BA07821DE8182100EEEDF4 /* UIView+XHExt.m in Sources */,
 				B3CA70581DF164A400EFFE37 /* XHAnchorRoomModel.m in Sources */,
 				B38EC5BE1DEFF03C00CED081 /* XHSectionHeaderView.m in Sources */,

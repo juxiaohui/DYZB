@@ -6,9 +6,9 @@
 //  Copyright © 2016年 juxiaohui. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XHBaseAnchorViewController.h"
 
-@interface XHOtherCategoryTagController : UIViewController
+@interface XHOtherCategoryTagController : XHBaseAnchorViewController
 
 @property(nonatomic, copy)NSString * tagName;
 

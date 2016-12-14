@@ -6,8 +6,8 @@
 //  Copyright © 2016年 juxiaohui. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XHBaseAnchorViewController.h"
 
-@interface XHRecommendViewController : UIViewController
+@interface XHRecommendViewController : XHBaseAnchorViewController
 
 @end
