@@ -46,7 +46,6 @@
     
     self.cycleView.frame = CGRectMake(0, -((cycleViewH) + gameViewH), ScreenWidth, cycleViewH);
     self.gameView.frame = CGRectMake(0, -gameViewH, ScreenWidth, gameViewH);
-    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

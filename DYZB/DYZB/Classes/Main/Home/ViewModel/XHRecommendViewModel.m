@@ -124,6 +124,7 @@
     [CBNetworking requestWithUrl:@"http://capi.douyucdn.cn/api/homeCate/getHotRoom" params:params useCache:NO httpMedthod:CBGETRequest progressBlock:nil successBlock:^(id response) {
         if ([response[error] integerValue] == 0) {
             self.anchorGroups = [XHAnchorGroupModel mj_objectArrayWithKeyValuesArray:response[data]];
+            self.anchorGroups.firstObject.defaultImage = @"home_header_hot";
              resultBlock ? resultBlock(YES) : nil;
         }
     } failBlock:^(NSError *error) {

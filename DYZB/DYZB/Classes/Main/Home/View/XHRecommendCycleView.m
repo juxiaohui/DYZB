@@ -57,12 +57,10 @@ static NSString * const cycleViewCellID = @"cycleViewCellID";
     return cell;
 }
 
-
 #pragma mark - UICollectionViewDelegate
 
-
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-
+    
     return self.collectionView.bounds.size;
 }
 
