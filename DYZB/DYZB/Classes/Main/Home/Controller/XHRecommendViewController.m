@@ -52,10 +52,14 @@
     
     //设置内边距
     self.collectionView.contentInset = UIEdgeInsetsMake(cycleViewH + gameViewH, 0, 0, 0);
+    [self showLoadingAnimation];
     
     [self.viewModel requestDataWith:^(BOOL success) {
         if (success) {
             self.gameView.gameGoups = [NSMutableArray arrayWithArray:self.viewModel.anchorGroups];
+            
+            [self.loadingView dismiss];
+            
             [self.collectionView reloadData];
         }
     }];
@@ -66,6 +70,8 @@
         }
     }];
 }
+
+
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     

@@ -11,6 +11,9 @@
 #import "XHPrettyCollectionViewCell.h"
 #import "XHSectionHeaderView.h"
 #import "XHAnchorGroupModel.h"
+#import "XHShowRoomViewController.h"
+#import "XHNormalRoomViewController.h"
+
 
 static NSString * const sectionHeaderID = @"sectionHeaderID";
 static CGFloat    const sectionHeaderH = 50;
@@ -20,7 +23,6 @@ static CGFloat    const sectionHeaderH = 50;
 @end
 
 @implementation XHBaseAnchorViewController
-
 
 -(XHRecommendViewModel *)viewModel{
     
@@ -59,6 +61,15 @@ static CGFloat    const sectionHeaderH = 50;
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
+-(void)showLoadingAnimation{
+    
+    XHLoadingAnimationView * loadingView = [[XHLoadingAnimationView alloc]init];
+    [loadingView showInView:self.view];
+    self.loadingView = loadingView;
+    self.loadingView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    [self.view bringSubviewToFront:loadingView];
+}
+
 #pragma mark - UICollectionViewDataSource
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -95,6 +106,29 @@ static CGFloat    const sectionHeaderH = 50;
     CGFloat itemNormalH = itemW * 3 / 4 ;
     return CGSizeMake(itemW, itemNormalH);
     
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    XHAnchorGroupModel * group = [self.viewModel.anchorGroups objectAtIndex:indexPath.section];
+    XHAnchorRoomModel * anchorRoom = [group.room_list objectAtIndex:indexPath.row];
+    
+    anchorRoom.isVertical ? [self presentShowViewController] : [self pushNoarmalViewController];
+    
+}
+
+-(void)presentShowViewController{
+
+    XHShowRoomViewController * showRoomVc = [[XHShowRoomViewController alloc]init];
+    [self presentViewController:showRoomVc animated:YES completion:nil];
+    
+}
+
+-(void)pushNoarmalViewController{
+    
+    XHNormalRoomViewController  * normalRoomVc = [[XHNormalRoomViewController alloc]init];
+
+    [self.navigationController pushViewController:normalRoomVc animated:YES];
 }
 
 

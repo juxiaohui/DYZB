@@ -26,6 +26,8 @@
 		B30EF4C51E0141D400CB4BA3 /* XHMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EF4C31E0141D400CB4BA3 /* XHMenuCollectionViewCell.m */; };
 		B30EF4C61E0141D400CB4BA3 /* XHMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30EF4C41E0141D400CB4BA3 /* XHMenuCollectionViewCell.xib */; };
 		B31A52461DEFC31200ACD572 /* XHRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */; };
+		B332783F1E0D00490036B1C1 /* XHShowRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B332783E1E0D00490036B1C1 /* XHShowRoomViewController.m */; };
+		B33278421E0D005C0036B1C1 /* XHNormalRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33278411E0D005C0036B1C1 /* XHNormalRoomViewController.m */; };
 		B3458A481DF6952000483D08 /* XHOtherCategoryTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3458A471DF6952000483D08 /* XHOtherCategoryTagController.m */; };
 		B3458A4B1DF6983300483D08 /* NSString+XHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3458A4A1DF6983300483D08 /* NSString+XHExt.m */; };
 		B358E8561DE6C24500CC6413 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E8551DE6C24500CC6413 /* main.m */; };
@@ -58,6 +60,7 @@
 		B3CA70521DF1513A00EFFE37 /* NSDictionary+JXHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CA70511DF1513A00EFFE37 /* NSDictionary+JXHLog.m */; };
 		B3CA70551DF1547700EFFE37 /* XHAnchorGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CA70541DF1547700EFFE37 /* XHAnchorGroupModel.m */; };
 		B3CA70581DF164A400EFFE37 /* XHAnchorRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CA70571DF164A400EFFE37 /* XHAnchorRoomModel.m */; };
+		B3D5DBA61E07CA2100EB11A9 /* XHLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D5DBA51E07CA2100EB11A9 /* XHLoadingAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,10 @@
 		B30EF4C41E0141D400CB4BA3 /* XHMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHMenuCollectionViewCell.xib; sourceTree = "<group>"; };
 		B31A52441DEFC31200ACD572 /* XHRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRecommendViewController.h; sourceTree = "<group>"; };
 		B31A52451DEFC31200ACD572 /* XHRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRecommendViewController.m; sourceTree = "<group>"; };
+		B332783D1E0D00490036B1C1 /* XHShowRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHShowRoomViewController.h; sourceTree = "<group>"; };
+		B332783E1E0D00490036B1C1 /* XHShowRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHShowRoomViewController.m; sourceTree = "<group>"; };
+		B33278401E0D005C0036B1C1 /* XHNormalRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNormalRoomViewController.h; sourceTree = "<group>"; };
+		B33278411E0D005C0036B1C1 /* XHNormalRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNormalRoomViewController.m; sourceTree = "<group>"; };
 		B3458A461DF6952000483D08 /* XHOtherCategoryTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHOtherCategoryTagController.h; sourceTree = "<group>"; };
 		B3458A471DF6952000483D08 /* XHOtherCategoryTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHOtherCategoryTagController.m; sourceTree = "<group>"; };
 		B3458A491DF6983300483D08 /* NSString+XHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XHExt.h"; sourceTree = "<group>"; };
@@ -173,6 +180,8 @@
 		B3CA70541DF1547700EFFE37 /* XHAnchorGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHAnchorGroupModel.m; sourceTree = "<group>"; };
 		B3CA70561DF164A400EFFE37 /* XHAnchorRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAnchorRoomModel.h; sourceTree = "<group>"; };
 		B3CA70571DF164A400EFFE37 /* XHAnchorRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHAnchorRoomModel.m; sourceTree = "<group>"; };
+		B3D5DBA41E07CA2100EB11A9 /* XHLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLoadingAnimationView.h; sourceTree = "<group>"; };
+		B3D5DBA51E07CA2100EB11A9 /* XHLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLoadingAnimationView.m; sourceTree = "<group>"; };
 		EDA9E2F06D5A396CD1CEA4D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,6 +227,41 @@
 				B30EF4B51E012FE600CB4BA3 /* XHBaseViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B33278391E0D00120036B1C1 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				B332783A1E0D00120036B1C1 /* Controller */,
+				B332783B1E0D00120036B1C1 /* Model */,
+				B332783C1E0D00120036B1C1 /* View */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		B332783A1E0D00120036B1C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B332783D1E0D00490036B1C1 /* XHShowRoomViewController.h */,
+				B332783E1E0D00490036B1C1 /* XHShowRoomViewController.m */,
+				B33278401E0D005C0036B1C1 /* XHNormalRoomViewController.h */,
+				B33278411E0D005C0036B1C1 /* XHNormalRoomViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B332783B1E0D00120036B1C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B332783C1E0D00120036B1C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B358E8481DE6C24500CC6413 = {
@@ -351,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				B358E89A1DE6C80600CC6413 /* Main */,
+				B33278391E0D00120036B1C1 /* Room */,
 				B358E8921DE6C80600CC6413 /* Home */,
 				B358E8961DE6C80600CC6413 /* Live */,
 				B358E88E1DE6C80600CC6413 /* Follow */,
@@ -536,6 +581,8 @@
 				B30B31051DF513DE00AE1D16 /* XHBaseCollectionViewCell.h */,
 				B30B31061DF513DE00AE1D16 /* XHBaseCollectionViewCell.m */,
 				B30B31071DF513DE00AE1D16 /* XHBaseCollectionViewCell.xib */,
+				B3D5DBA41E07CA2100EB11A9 /* XHLoadingAnimationView.h */,
+				B3D5DBA51E07CA2100EB11A9 /* XHLoadingAnimationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -853,10 +900,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33278421E0D005C0036B1C1 /* XHNormalRoomViewController.m in Sources */,
 				B30B31111DF546C000AE1D16 /* XHCycleModel.m in Sources */,
 				B373BE411DFE87C000D3C5F5 /* XHOtherCategoryHeadView.m in Sources */,
 				B30B31151DF54DA400AE1D16 /* XHCycleCollectionViewCell.m in Sources */,
 				B3CA70421DF1479500EFFE37 /* CBNetworking.m in Sources */,
+				B332783F1E0D00490036B1C1 /* XHShowRoomViewController.m in Sources */,
 				B358E8591DE6C24500CC6413 /* AppDelegate.m in Sources */,
 				B3458A4B1DF6983300483D08 /* NSString+XHExt.m in Sources */,
 				B358E8BA1DE6D5D100CC6413 /* XHFollowViewController.m in Sources */,
@@ -871,6 +920,7 @@
 				B358E8B71DE6D5A800CC6413 /* XHLiveViewController.m in Sources */,
 				B358E8BD1DE6D5E400CC6413 /* XHProfileViewController.m in Sources */,
 				B30EF4BF1E013D4E00CB4BA3 /* XHHomeMenuView.m in Sources */,
+				B3D5DBA61E07CA2100EB11A9 /* XHLoadingAnimationView.m in Sources */,
 				B38EC5C81DF008DE00CED081 /* XHPrettyCollectionViewCell.m in Sources */,
 				B3CA704D1DF149F000EFFE37 /* XHRecommendViewModel.m in Sources */,
 				B38EC5C31DEFF3E700CED081 /* XHNormalCollectionViewCell.m in Sources */,

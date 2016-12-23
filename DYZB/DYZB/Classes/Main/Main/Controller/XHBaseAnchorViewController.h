@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XHRecommendViewModel.h"
+#import "XHLoadingAnimationView.h"
 static CGFloat const itemMargin = 10;
 static NSString * const normalCellID = @"normalCellID";
 static NSString * const prettyCellID = @"prettyCellID";
@@ -18,6 +19,10 @@ static NSString * const prettyCellID = @"prettyCellID";
 
 @property(nonatomic, strong)XHRecommendViewModel * viewModel;
 
+@property(nonatomic, weak)XHLoadingAnimationView * loadingView;
+
+
+-(void)showLoadingAnimation;
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 

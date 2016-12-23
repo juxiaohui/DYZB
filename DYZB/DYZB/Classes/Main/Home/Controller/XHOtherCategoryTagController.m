@@ -38,6 +38,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self showLoadingAnimation];
+    
     [self.viewModel requestOtherTagDataWith:self.tagName handle:^(BOOL success) {
         if (success) {
             
@@ -57,9 +59,16 @@
             
             self.menuView.anchorGroups = [NSMutableArray arrayWithArray:self.viewModel.anchorGroups];
             
+            [self.loadingView dismiss];
+            
             [self.collectionView reloadData];
         }
     }];
+}
+
+-(void)dealloc{
+    
+    XHLogFunc
 }
 
 - (void)didReceiveMemoryWarning {

@@ -29,6 +29,7 @@
         CGFloat contentH = ScreenHeight - NavigationBarH - titleViewH - TabBarH;
 
         CGRect rect = CGRectMake(0, NavigationBarH + titleViewH, ScreenWidth, contentH);
+        
         XHRecommendViewController * recommendVc = [[XHRecommendViewController alloc]init];
         NSMutableArray * VCs = [NSMutableArray array];
         [VCs addObject:recommendVc];

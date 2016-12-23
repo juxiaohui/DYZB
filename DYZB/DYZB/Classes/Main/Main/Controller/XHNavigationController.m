@@ -7,6 +7,7 @@
 //
 
 #import "XHNavigationController.h"
+#import <objc/message.h>
 
 @interface XHNavigationController ()<UIGestureRecognizerDelegate>
 
@@ -41,8 +42,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   self.interactivePopGestureRecognizer.delegate = self;
+    
+    self.interactivePopGestureRecognizer.delegate = self;
+    
+    
+    UIGestureRecognizer * systemGes = self.interactivePopGestureRecognizer;
+   
+    //手势所在View
+    UIView * gesView = systemGes.view;
+    
+    //target View
+    // 利用运行时机制 查看所有属性
+    
+    unsigned int count = 0;
+   // Ivar * ivars  = class_copyIvarList([UIGestureRecognizer class], &count);
+    
+    for (int i = 0; i<count; i++) {
+        //ivar_getName 获取某一个成员变量下面的名称,因为这个方法返回的类型是const char *所以需要把char转换为NSString,直接包装成对象就可以了
+        
+       // NSString * name = @(ivar_getName(ivars[i]));
+    }
+    
+    NSArray * targets = [systemGes valueForKey:@"_targets"];
+    
+    // 去掉数组
+    id tempTarget = targets[0];
+    // 获取target
+    id target = [tempTarget valueForKeyPath:@"_target"];
+    
+    SEL sel = @selector(handleNavigationTransition:);
+    
+    // 消除方法弃用(过时)的警告
+    //#pragma clang diagnostic push
+    //#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    // 添加全屏滑动手势
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:sel];
+   
+   // #pragma clang diagnostic pop
+    [gesView addGestureRecognizer:pan];
 }
+
+-(void)handleNavigationTransition:(UIGestureRecognizer *)pan{
+    
+    
+}
+
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
@@ -71,7 +115,6 @@
  * 返回值:返回YES,手势有效; 返回NO,手势失效
  */
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    
     return self.childViewControllers.count > 1;
 }
 
